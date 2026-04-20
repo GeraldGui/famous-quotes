@@ -17,7 +17,6 @@ public class FamousQuotes {
 
 
         try {
-            if (command < 10) {
                 System.out.println(quotes[command - 1]);
 
                 System.out.println("Would you like to see another? (Y/N)");
@@ -37,13 +36,9 @@ public class FamousQuotes {
                 if (again.equalsIgnoreCase("n")) {
                     System.out.println("See you again!");
                 }
-            }
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            System.out.println("Wrong input sorry!");
         }
-
-
-
     }
 }
 
